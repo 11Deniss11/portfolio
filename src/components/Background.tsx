@@ -45,13 +45,6 @@ interface Props {
 
 // movingBackground component responsible for the background to the website
 function Background({ scrollSpeed = 0, topColour, bottomColour }: Props) {
-  // const [gradientBottomColour, setGradientBottomColour] = useState("#104a85");
-  // const [gradientTopColour, setGradientTopColour] = useState("#abbdcc");
-
-  // const [wantedGradientBottomColour, setWantedGradientBottomColour] =
-  //   useState("#210f3b"); // #210f3b, #1b1752, #104a85, #145ca6
-  // const [wantedGradientTopColour, setWantedGradientTopColour] =
-  //   useState("#88bdb0"); // #88bdb0, #ffffff, #a1b1bf, #abbdcc
   const gradientTopColourRef = useRef([136, 189, 176]); // ocean 171, 189, 204, original 136, 189, 176
   const gradientBottomColourRef = useRef([33, 15, 59]); // ocean 16, 74, 133, original 33, 15, 59
 

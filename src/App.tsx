@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FirstRobotics from "./pages/FirstRobotics";
+import Mechatronics from "./pages/Mechatronics";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
@@ -95,6 +96,16 @@ function App() {
           path="/sparkans"
           element={
             <FirstRobotics
+              setPageName={setPageName}
+              setBackgroundColourTop={setWantedBackgroundColourTop}
+              setBackgroundColourBottom={setWantedBackgroundColourBottom}
+            />
+          }
+        />
+        <Route
+          path="/mechatronics"
+          element={
+            <Mechatronics
               setPageName={setPageName}
               setBackgroundColourTop={setWantedBackgroundColourTop}
               setBackgroundColourBottom={setWantedBackgroundColourBottom}

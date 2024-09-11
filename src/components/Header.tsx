@@ -26,6 +26,10 @@ function Header({ headerText }: Props) {
     navigate("/sparkans");
   };
 
+  const redirectToMech = () => {
+    navigate("/mechatronics");
+  };
+
   return (
     <div
       style={{
@@ -33,7 +37,7 @@ function Header({ headerText }: Props) {
         top: "0%",
         left: "0%",
         width: "100%",
-        height: "9%",
+        height: "6%",
         zIndex: 1,
       }}
     >
@@ -59,13 +63,15 @@ function Header({ headerText }: Props) {
               top: "15%",
               boxShadow: "none",
             }}
+            textStyle={{ fontSize: "29px" }}
           />
           <h1
             style={{
               textAlign: "center",
-              marginTop: "0.2%",
-              marginLeft: "-10%",
+              marginTop: "0.6%",
+              marginRight: "26%",
               pointerEvents: "none",
+              fontSize: "26px",
             }}
           >
             {headerText}
@@ -80,6 +86,7 @@ function Header({ headerText }: Props) {
               height: "70%",
               left: "89%",
               top: "15%",
+              boxShadow: "none",
             }}
             textStyle={{ fontSize: "150%" }}
           />
@@ -93,6 +100,7 @@ function Header({ headerText }: Props) {
               height: "70%",
               left: "78%",
               top: "15%",
+              boxShadow: "none",
             }}
             textStyle={{ fontSize: "150%" }}
           />
@@ -106,6 +114,21 @@ function Header({ headerText }: Props) {
               height: "70%",
               left: "64%",
               top: "15%",
+              boxShadow: "none",
+            }}
+            textStyle={{ fontSize: "150%" }}
+          />
+
+          <TextButton
+            text={"Mechatronics 35"}
+            onClick={redirectToMech}
+            divStyle={{
+              position: "absolute",
+              width: "14%",
+              height: "70%",
+              left: "48.5%",
+              top: "15%",
+              boxShadow: "none",
             }}
             textStyle={{ fontSize: "150%" }}
           />

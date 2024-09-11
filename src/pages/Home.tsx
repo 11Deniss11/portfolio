@@ -45,8 +45,8 @@ function Home({
         }}
       >
         <h1>Denis Cuznetov</h1>
-        <h4 style={{ marginTop: "-3%" }}> Email: denis.cuznetov@gmail.com</h4>
-        <h4 style={{ marginTop: "-3%" }}> Phone: 403-614-7294</h4>
+        <h4 style={{ marginTop: "-3%" }}> Email: nope</h4>
+        <h4 style={{ marginTop: "-3%" }}> Phone: nope</h4>
         <h2 style={{ marginTop: "-1%" }}>
           Student at STEM Innovation Academy, Graduating 2025
         </h2>

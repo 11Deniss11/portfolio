@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import FrostGlassBox from "../components/FrostGlassBox";
+import Mech20 from "../assets/Mech20Cropped.jpg";
 // import SparkansLogoSVG from "../assets/SparkansLogoSVG.svg";
 
 interface Props {
@@ -24,7 +25,7 @@ function Mechatronics({
         divStyle={{
           top: "15%",
           left: "5%",
-          right: "38vw",
+          width: "40.2%",
           height: "60%",
           paddingLeft: "2%",
           backgroundColor: "rgba(0, 0, 0, 0.2)",
@@ -37,11 +38,22 @@ function Mechatronics({
           top: "15%",
           right: "5%",
           height: "60%",
-          width: "29vw",
+          width: "43%",
           paddingLeft: "2%",
           backgroundColor: "rgba(0, 0, 0, 0.2)",
         }}
-      ></FrostGlassBox>
+      >
+        <img
+          src={Mech20}
+          alt="Image of Mechatronics 25 FTC Challenge"
+          style={{
+            marginLeft: "3%",
+            marginTop: "3.2%",
+            width: "90%",
+            objectFit: "cover",
+          }}
+        />
+      </FrostGlassBox>
       {/* Expert Systems */}
       <FrostGlassBox
         divStyle={{

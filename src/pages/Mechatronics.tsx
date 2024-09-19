@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import FrostGlassBox from "../components/FrostGlassBox";
+import TextImageSection from "../components/TextImageSection";
+
 import Mech20 from "../assets/Mech20Cropped.jpg";
-// import SparkansLogoSVG from "../assets/SparkansLogoSVG.svg";
+
 
 interface Props {
   setPageName: (pageName: string) => void;
@@ -31,7 +33,7 @@ function Mechatronics({
           backgroundColor: "rgba(0, 0, 0, 0.2)",
         }}
       >
-        <h1 style={textColour}>Mechatronics 35 (WIP, scroll for expert systems)</h1>
+        <h1 style={textColour}>Mechatronics 35 (WIP, scroll for expert systems also it's missing images but hopefully thats fine)</h1>
       </FrostGlassBox>
       <FrostGlassBox
         divStyle={{
@@ -54,6 +56,7 @@ function Mechatronics({
           }}
         />
       </FrostGlassBox>
+
       {/* Expert Systems */}
       <FrostGlassBox
         divStyle={{
@@ -71,87 +74,34 @@ function Mechatronics({
         </h2>
         <h1 style={{ ...textColour, textAlign: "center", marginTop: "7%", fontSize: "28px" }}>There are 5 Fundamental Components of an Expert System</h1>
       </FrostGlassBox>
+
       {/* Knowledge Base */}
-      <FrostGlassBox
-        divStyle={{
-          top: "141%",
-          left: "5%",
-          height: "50%",
-          width: "29vw",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      ></FrostGlassBox>
-      <FrostGlassBox
-        divStyle={{
-          top: "141%",
-          right: "5%",
-          left: "38vw",
-          height: "50%",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <TextImageSection collectiveDivStyle={{top: "141%"}} textOrrientation="right">
         <h1 style={{ ...textColour, textAlign: "center",marginBottom: "6%", fontSize: "35px" }}>Knowledge Base</h1>
         <h2 style={{ ...textColour, textIndent: "50px", marginRight: "0.3%" }}>Expert systems require a database of knowledge to learn from to be able to preform their task like a human would.
           This could be a dataset of images with tags or a set of rules with a goal or anything that can be represented in a digital file. 
           It is sometimes accompanied by an aquisition component which will let users to add more data to the knowledge base and 
           allow the system to train itself on this new data to improve it's accuracy.
         </h2>
-      </FrostGlassBox>
+      </TextImageSection>
+
       {/* Interference Engine */}
-      <FrostGlassBox
-        divStyle={{
-          top: "196%",
-          left: "5%",
-          right: "38vw",
-          height: "50%",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <TextImageSection collectiveDivStyle={{top: "196%"}} textOrrientation="left">
         <h1 style={{ ...textColour, textAlign: "center", marginBottom: "6%", fontSize: "35px" }}>Interference Engine</h1>
         <h2 style={{ ...textColour, textIndent: "50px", marginRight: "0.3%" }}>The interference engine will take and interpret the knowledge base and the user's input and generate an output based on this data.
           It is the brain of the expert system and is responsible for making all the decisions based on it's knowledge base and the user input.
         </h2>
-      </FrostGlassBox>
-      <FrostGlassBox
-        divStyle={{
-          top: "196%",
-          right: "5%",
-          height: "50%",
-          width: "29vw",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      ></FrostGlassBox>
+      </TextImageSection>
+
       {/* A User Interface */}
-      <FrostGlassBox
-        divStyle={{
-          top: "251%",
-          left: "5%",
-          height: "50%",
-          width: "29vw",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      ></FrostGlassBox>
-      <FrostGlassBox
-        divStyle={{
-          top: "251%",
-          right: "5%",
-          left: "38vw",
-          height: "50%",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <TextImageSection collectiveDivStyle={{top: "251%"}} textOrrientation="right">
         <h1 style={{ ...textColour, textAlign: "center",marginBottom: "6%", fontSize: "35px" }}>User Interface</h1>
         <h2 style={{ ...textColour, textIndent: "50px", marginRight: "0.3%" }}>This is the front-end which allows for a non-expert user to use the software.
           It is anything that interfaces with the users including buttons, text, and more. It often coexists with
           an explanation component which will help explain the output to a non-expert user.
         </h2>
-      </FrostGlassBox>
+      </TextImageSection>
+
       {/* Why we need expert systems */}
       <FrostGlassBox
         divStyle={{
@@ -171,88 +121,34 @@ function Mechatronics({
         </h2>
         <h1 style={{ ...textColour, textAlign: "center", marginTop: "7%", fontSize: "28px" }}>Three Different Ways Expert Systems are being Used Today:</h1>
       </FrostGlassBox>
+
       {/* Medical Industry */}
-      <FrostGlassBox
-        divStyle={{
-          top: "361%",
-          left: "5%",
-          right: "38vw",
-          height: "40%",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <TextImageSection collectiveDivStyle={{top: "361%", height: "40%" }} textOrrientation="left">
         <h1 style={{ ...textColour, textAlign: "center", marginBottom: "6%", fontSize: "35px" }}>Expert System for Diagnosing Malaria</h1>
         <h2 style={{ ...textColour, textIndent: "50px", marginRight: "0.3%" }}> This expert system is used to diagnose 
           Malaria and other diseases in developing countries where there aren't as many medical experts. It's knowledge 
           base is a lot of data from Malaria patients and it's interference engine uses this data to diagnose patients.
         </h2>
-      </FrostGlassBox>
-      <FrostGlassBox
-        divStyle={{
-          top: "361%",
-          right: "5%",
-          height: "40%",
-          width: "29vw",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      ></FrostGlassBox>
+      </TextImageSection>
+
       {/* Language Translation */}
-      <FrostGlassBox
-        divStyle={{
-          top: "406%",
-          left: "5%",
-          height: "50%",
-          width: "29vw",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      ></FrostGlassBox>
-      <FrostGlassBox
-        divStyle={{
-          top: "406%",
-          right: "5%",
-          left: "38vw",
-          height: "50%",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <TextImageSection collectiveDivStyle={{top: "406%", height: "50%" }} textOrrientation="right">
         <h1 style={{ ...textColour, textAlign: "center",marginBottom: "6%", fontSize: "35px" }}>Language Translation</h1>
         <h2 style={{ ...textColour, textIndent: "50px", marginRight: "0.3%" }}>If you ever used Google Translate, 
           you've likely seen that it's not perfect. A regular non-expert system will struggle to transfer the full 
           meaning of the text. Expert systems can be used to improve this by using a knowledge base of Languages and 
           their translations by experts to generate more accurate translations.
         </h2>
-      </FrostGlassBox>
+      </TextImageSection>
+
       {/* Customer Service */}
-      <FrostGlassBox
-        divStyle={{
-          top: "461%",
-          left: "5%",
-          right: "38vw",
-          height: "40%",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <TextImageSection collectiveDivStyle={{top: "461%", height: "40%" }} textOrrientation="left">
         <h1 style={{ ...textColour, textAlign: "center", marginBottom: "6%", fontSize: "35px" }}>Customer Service</h1>
         <h2 style={{ ...textColour, textIndent: "50px", marginRight: "0.3%" }}>Expert systems are beginning to see use 
           in customer service where they are used to answer common questions and help customers with their problems. 
           They may be able to reduce costs and improve the availability of customer service.
         </h2>
-      </FrostGlassBox>
-      <FrostGlassBox
-        divStyle={{
-          top: "461%",
-          right: "5%",
-          height: "40%",
-          width: "29vw",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      ></FrostGlassBox>
+      </TextImageSection>
       {/* How is Matlab and Simulink used in Expert Systems */}
       <FrostGlassBox
         divStyle={{
@@ -274,27 +170,9 @@ function Mechatronics({
         </h2>
         <h1 style={{ ...textColour, textAlign: "center", marginTop: "3%", fontSize: "28px" }}>Here is an example of an Expert System built on Matlab and/or Simulink:</h1>
       </FrostGlassBox>
+
       {/* Expert System Example */}
-      <FrostGlassBox
-        divStyle={{
-          top: "574%",
-          left: "5%",
-          height: "53%",
-          width: "29vw",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      ></FrostGlassBox>
-      <FrostGlassBox
-        divStyle={{
-          top: "574%",
-          right: "5%",
-          left: "38vw",
-          height: "53%",
-          paddingLeft: "2%",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <TextImageSection collectiveDivStyle={{top: "574%", height: "53%" }} textOrrientation="right">
         <h1 style={{ ...textColour, textAlign: "center",marginBottom: "6%", fontSize: "35px" }}>Decoding Words From Brain Signals</h1>
         <h2 style={{ ...textColour, textIndent: "50px", marginRight: "0.3%" }}>This expert system created by 
           the University of Texas, Austin, is able to decode words from brain signals with reasonable accuracy, which 
@@ -303,7 +181,8 @@ function Mechatronics({
           models for each step of the process they are using, so rather than there being one inference engine and 
           knowledge base, there is more like 5 of each.
         </h2>
-      </FrostGlassBox>
+      </TextImageSection>
+      
       {/* Sources */}
       <FrostGlassBox
         divStyle={{

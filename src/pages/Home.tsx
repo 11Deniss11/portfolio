@@ -15,8 +15,8 @@ function Home({
 }: Props) {
   useEffect(() => {
     setPageName("Home");
-    setBackgroundColourTop([136, 189, 176]);
-    setBackgroundColourBottom([33, 15, 59]);
+    setBackgroundColourTop([120, 120, 120]);
+    setBackgroundColourBottom([33, 33, 33]);
   }, [setPageName]);
   return (
     <div

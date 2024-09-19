@@ -225,6 +225,26 @@ function Mechatronics({
           Learning.” MATLAB & Simulink</a>
         </h2>
       </FrostGlassBox>
+
+
+      {/* Matlab Motor Testing */}
+      <FrostGlassBox
+        divStyle={{
+          top: "710%",
+          left: "5%",
+          right: "5%",
+          height: "56%",
+          paddingLeft: "2%",
+          backgroundColor: "rgba(0, 0, 0, 0.2)",
+        }}
+      >
+        <h1 style={{ ...textColour, textAlign: "center",marginBottom: "3%" }}>Motor Testing with Arduino using Matlab</h1>
+        <h2 style={{ ...textColour, textIndent: "50px" }}>Expert Systems are software that use artificial intelligence trained on databases of expert's data to emulate the sort of decisions that a human expert would make.
+          Some of it's use cases include Medical Diagnosis, Language translation, Customer Support, and more.
+        </h2>
+        <h1 style={{ ...textColour, textAlign: "center", marginTop: "7%", fontSize: "28px" }}>There are 5 Fundamental Components of an Expert System</h1>
+      </FrostGlassBox>
+
     </div>
   );
 }
